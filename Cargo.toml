@@ -1,0 +1,39 @@
+[package]
+name = "jconvert"
+version = "0.2.0"
+edition = "2021"
+authors = ["YourName <your@email.com>"]
+description = "JSON FOLDER TO JSONL CONVERTER - 폴더 내 JSON 파일들을 JSONL로 병합하는 고성능 CLI 도구"
+readme = "README.md"
+license = "MIT"
+keywords = ["json", "jsonl", "converter", "cli"]
+categories = ["command-line-utilities"]
+
+[dependencies]
+# CLI 인자 파싱
+clap = { version = "4.4", features = ["derive"] }
+
+# JSON 처리
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+
+# 파일 시스템 탐색
+walkdir = "2.4"
+
+# 에러 처리
+anyhow = "1.0"
+
+# 진행률 표시
+indicatif = "0.17"
+
+# 병렬 처리
+rayon = "1.8"
+
+# 컬러 출력
+colored = "2.1"
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
+strip = true
