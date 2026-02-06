@@ -32,6 +32,19 @@ rayon = "1.8"
 # 컬러 출력
 colored = "2.1"
 
+# 글로브 패턴 매칭
+glob = "0.3"
+
+# 타입화된 에러 처리
+thiserror = "1.0"
+
+# 메모리 매핑 (대용량 파일)
+memmap2 = "0.9"
+
+[dev-dependencies]
+# 테스트용 임시 파일/폴더
+tempfile = "3.10"
+
 [profile.release]
 opt-level = 3
 lto = true
