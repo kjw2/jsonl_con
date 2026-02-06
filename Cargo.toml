@@ -1,6 +1,6 @@
 [package]
 name = "jconvert"
-version = "0.2.0"
+version = "1.2.0"
 edition = "2021"
 authors = ["YourName <your@email.com>"]
 description = "JSON FOLDER TO JSONL CONVERTER - 폴더 내 JSON 파일들을 JSONL로 병합하는 고성능 CLI 도구"
